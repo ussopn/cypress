@@ -3,6 +3,10 @@
 Écrire une série de tests "end to end" à l'aide de Cypress.
 Faire les tests sur "personal_project".
 
+Installation de personal_project:
+  - cd personal_project
+  - npm run serve
+
 Leur documentation: https://docs.cypress.io/guides/overview/why-cypress. Elle contient notamment des best practices et des anti-pattern.
 
 
