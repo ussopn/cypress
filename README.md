@@ -7,8 +7,7 @@ Installation de personal_project:
   - cd personal_project
   - npm run serve
 
-Leur documentation: https://docs.cypress.io/guides/overview/why-cypress. Elle contient notamment des best practices et des anti-pattern.
-
+La documentation de cypress: https://docs.cypress.io/guides/overview/why-cypress. Elle contient notamment des best practices et des anti-pattern.
 
 
 Scénarii de test (exemple: un textarea / tester que l'app renvoie bien un message d'erreur lorsqu'il est vide et qu'on veut submit, etc.). Le but étant de pouvoir apprécier :
@@ -18,3 +17,8 @@ La qualité du test en lui même.
 Il faut 5-10 scenarii (un scenario étant défini comme une "feature" à tester, par exemple un bouton, et chaque scénario pouvant contenir plusieurs tests).
 
 Il faut une commande permettant de faire tourner les tests (par ex. : yarn test:e2e).
+
+
+Installation:
+  -
+  -
