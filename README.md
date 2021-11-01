@@ -4,8 +4,8 @@
 Faire les tests sur "personal_project".
 
 Installation de personal_project:
-  - cd personal_project
-  - npm run serve
+  - Go to javascript project: cd personal_project
+  - Launch javascript project: npm run serve
 
 La documentation de cypress: https://docs.cypress.io/guides/overview/why-cypress. Elle contient notamment des best practices et des anti-pattern.
 
@@ -20,5 +20,7 @@ Il faut une commande permettant de faire tourner les tests (par ex. : yarn test:
 
 
 Installation:
-  -
-  -
+  - Go to cypress project: cd CypressProject
+  - Create package.json: npm init -y
+  - Install cypress command: npm i cypress
+  - Create cypress folder: npx cypress open
