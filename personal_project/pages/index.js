@@ -16,6 +16,7 @@ export default class extends React.Component {
     }
 
     onSubmit = async (e) => {
+
         e.preventDefault();
         let {input} = this.state;
 
@@ -26,7 +27,7 @@ export default class extends React.Component {
         }
         let list = JSON.parse("[" + input + "]");
 
-        console.log('list', list);
+        console.log('my list', list);
         let config = {
             method: 'post',
             url: 'http://0.0.0.0:8080/count_identical_pairs',
@@ -57,7 +58,7 @@ export default class extends React.Component {
                 <h1 style={{marginLeft: "50px"}}>Count Identical Pairs</h1>
                 <h2 style={{marginLeft: "100px"}}>List of Transactions</h2>
                 <form style={{marginLeft: "150px"}} onSubmit={this.onSubmit}>
-                    <input type="text" name="input" value={input} onChange={this.onChange}/>
+                    <input type="text" name="input" value="Hello" onChange={this.onChange}/>
                     <br/>
                     <button
                         style={{
@@ -73,6 +74,7 @@ export default class extends React.Component {
                         }}
                         type="submit">Submit
                     </button>
+
                 </form>
                 <h3 style={{marginLeft: "100px", marginTop: "20px"}}>Response:</h3>
                 <div style={{display: "flex", marginTop: "20px"}}>

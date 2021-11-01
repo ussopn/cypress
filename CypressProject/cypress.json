@@ -1,1 +1,7 @@
-{}
+{
+  "goog:chromeOptions": {
+
+    "excludeSwitches": [ "enable-automation" ],
+    "useAutomationExtension": false
+  }
+}
