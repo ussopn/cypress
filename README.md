@@ -5,8 +5,7 @@ Faire les tests sur "personal_project".
 
 Installation de personal_project:
   - Go to javascript project: cd personal_project
-  - Install dependencies: npm i
-  - Launch javascript project: npm start
+  - Launch javascript project: npm run dev
 
 La documentation de cypress: https://docs.cypress.io/guides/overview/why-cypress. Elle contient notamment des best practices et des anti-pattern.
 
