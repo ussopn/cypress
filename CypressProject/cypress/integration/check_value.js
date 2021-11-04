@@ -1,6 +1,5 @@
 /// <reference types="cypress"  />
 
-
 beforeEach(() => {
     cy.visit('https://www.wikipedia.org/')
 })
