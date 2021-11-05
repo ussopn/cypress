@@ -7,7 +7,6 @@ beforeEach(() => {
 it('Check String', () => {
     const check = 'check'
 
-
     cy.get('#searchInput')
         .type(check)
         .should(($input) => {
