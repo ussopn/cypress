@@ -11,5 +11,7 @@ describe('Manage Cookies', () => {
             'value',
             '189jd09sufh33aaiidhf99d09'
         )
+        cy.clearCookie('session_id')
+        cy.getCookie('session_id').should('be.null')
     })
 })
