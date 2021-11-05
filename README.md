@@ -1,7 +1,7 @@
 7 scenarii written with cypress. Exploring the basic features of cypress.
 
 launch project :  
-                  - cd CypressProject
                   
+                  - cd CypressProject
                   - npx cypress open
                   
