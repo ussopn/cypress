@@ -4,7 +4,7 @@ beforeEach(() => {
     cy.visit('https://www.wikipedia.org/')
 })
 
-it('Check String', () => {
+it('Check Value Of String', () => {
     const check = 'check'
 
     cy.get('#searchInput')
