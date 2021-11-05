@@ -3,7 +3,7 @@
 beforeEach(() => {
     cy.visit('https://www.google.com/')
 })
-it('check length', () => {
+it('Is Visible', () => {
     cy.get('#L2AGLb > .jyfHyd').click()
     cy.get('.gLFyf')
         .type('google')
