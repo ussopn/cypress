@@ -15,5 +15,4 @@ it('Check String', () => {
             expect(val).to.equal('check')
             expect(val).not.to.include('not check')
         })
-
 });
