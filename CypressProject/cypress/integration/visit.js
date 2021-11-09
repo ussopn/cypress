@@ -1,8 +1,8 @@
 /// <reference types="cypress"  />
 
-it('Visit Facebook', () => {
-    const email =  'victor.schneider@epitech.eu';
-    const password = 'password1234';
+it('Visit Real World App', () => {
+    let email =  '';
+    let password = '';
 
     cy.visit('https://www.facebook.com/')
     cy.get('[data-testid=cookie-policy-dialog-accept-button]').click()
