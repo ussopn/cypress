@@ -1,12 +1,15 @@
 /// <reference types="cypress"  />
 
-beforeEach(() => {
+it('Signing in without an account', () => {
     cy.visit('http://localhost:3000')
-})
 
-it('Signing In without an account', () => {
     let username = 'john';
     let password = '1';
+
+    // sign up without any fields
+    cy.get('.MuiButton-label').click()
+    cy.get('#username-helper-text').should('be.visible')
+    cy.contains('Username').should('be.visible')
 
     // sign in without input
     cy.get('.makeStyles-form-4').click()
