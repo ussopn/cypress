@@ -129,4 +129,6 @@ it('Signing up for an account with first name, last name and username filled' +
     cy.get('#username').type(username)
     cy.get('#password').type(password)
     cy.get('[data-test=signin-submit]').click()
+
+
 });
