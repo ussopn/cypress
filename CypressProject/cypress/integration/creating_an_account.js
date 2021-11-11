@@ -109,4 +109,24 @@ it('Signing up for an account with first name, last name and username filled' +
     cy.get('#lastName').type(lastName)
     cy.get('[data-test=signup-submit]').click()
 
+    // bad username but correct password
+    cy.get('#username').type(username + 'bad')
+    cy.get('#password').type(password)
+    cy.get('[data-test=signin-submit]').click()
+    cy.get('.MuiAlert-message')
+
+    // correct username but bad password
+    cy.get('#username').clear()
+    cy.get('#password').clear()
+    cy.get('#username').type(username)
+    cy.get('#password').type(password + 'bad')
+    cy.get('[data-test=signin-submit]').click()
+    cy.get('.MuiAlert-message')
+
+    // successful signing in
+    cy.get('#username').clear()
+    cy.get('#password').clear()
+    cy.get('#username').type(username)
+    cy.get('#password').type(password)
+    cy.get('[data-test=signin-submit]').click()
 });
